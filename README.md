@@ -12,3 +12,6 @@ bikeshare.py, chicago.csv
 
 ### Credits
 https://github.com/udacity/course-collaboration-travel-plans
+
+### Comments
+This project is amazing!
