@@ -174,6 +174,7 @@ def user_stats(df):
     print('-'*40)
 
 def display_data(df):
+    """Display data if user wants to see"""
     #ask for raw data first 5 and then next 5 raw data rows
     while True:
         view_input_five = input('\nWould you like to see first 5 rows of data? Please enter yes or no:').lower()
