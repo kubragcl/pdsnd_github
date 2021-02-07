@@ -66,6 +66,7 @@ def load_data(city, month, day):
         df - Pandas DataFrame containing city data filtered by month and day
     """
     df = pd.read_csv(CITY_DATA[city])
+    #convert Start Time column to datetime
     df['Start Time'] = pd.to_datetime(df['Start Time'])
     df['month'] = df['Start Time'].dt.month
     df['day_of_week'] = df['Start Time'].dt.weekday_name
@@ -173,6 +174,7 @@ def user_stats(df):
     print('-'*40)
 
 def display_data(df):
+    """Display data if user wants to see"""
     #ask for raw data first 5 and then next 5 raw data rows
     while True:
         view_input_five = input('\nWould you like to see first 5 rows of data? Please enter yes or no:').lower()
